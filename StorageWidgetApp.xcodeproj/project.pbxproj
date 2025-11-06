@@ -24,6 +24,7 @@
 		AA00000A /* DriveInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveInfo.swift; sourceTree = "<group>"; };
 		AA00000C /* RingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingView.swift; sourceTree = "<group>"; };
 		AA00000E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA00000F /* StorageWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StorageWidgetExtension.entitlements; sourceTree = "<group>"; };
 		AA000010 /* StorageWidgetApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StorageWidgetApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA000011 /* StorageWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StorageWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -72,6 +73,7 @@
 				AA00000A /* DriveInfo.swift */,
 				AA00000C /* RingView.swift */,
 				AA00000E /* Assets.xcassets */,
+				AA00000F /* StorageWidgetExtension.entitlements */,
 			);
 			path = StorageWidgetExtension;
 			sourceTree = "<group>";
@@ -365,7 +367,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_ENTITLEMENTS = StorageWidgetExtension/StorageWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
@@ -392,7 +394,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_ENTITLEMENTS = StorageWidgetExtension/StorageWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";

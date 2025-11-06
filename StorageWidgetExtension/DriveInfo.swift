@@ -115,12 +115,30 @@ struct DriveInfo {
         } ?? drives.first ?? placeholder
     }
     
+    /// Returns up to 4 drives for widget display
+    static func getDrives() -> [DriveInfo] {
+        let allDrives = getAllMountedDrives()
+        return Array(allDrives.prefix(4))
+    }
+    
+    /// Determines if a drive is internal based on its name
+    var isInternal: Bool {
+        name.contains("Mac") || name.contains("SSD") || name.contains("Internal")
+    }
+    
     static var placeholder: DriveInfo {
         DriveInfo(
             name: "Mac SSD",
             total: 1_000_000_000_000, // 1 TB
             available: 300_000_000_000 // 300 GB
         )
+    }
+    
+    static var placeholderDrives: [DriveInfo] {
+        [
+            DriveInfo(name: "Mac SSD", total: 1_000_000_000_000, available: 300_000_000_000),
+            DriveInfo(name: "External 1", total: 500_000_000_000, available: 200_000_000_000)
+        ]
     }
 }
 
