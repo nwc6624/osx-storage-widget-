@@ -10,6 +10,7 @@ struct DriveInfo {
         let used = total - available
         return Double(used) / Double(total)
     }
+
     
     var used: Int64 {
         total - available
